@@ -5,10 +5,17 @@ class estado
 public:
   int id;
 
+  estado(){};
+  estado(int i);
   int getID();
   void setID(int i);
 
 };
+
+estado::estado(int i)
+{
+  id = i;
+}
 
 int estado::getID()
 {
